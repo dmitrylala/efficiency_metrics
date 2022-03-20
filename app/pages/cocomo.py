@@ -3,7 +3,7 @@ import sqlite3
 import streamlit as st
 import json
 import pandas as pd
-from ml_pred import predict
+from pages.ml_pred import predict
 
 
 # constants
