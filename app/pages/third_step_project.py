@@ -2,7 +2,7 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 import json
-from jira_workflow import JiraWorkflow
+from pages.jira_workflow import JiraWorkflow
 import sqlite3
 from os import path
 
