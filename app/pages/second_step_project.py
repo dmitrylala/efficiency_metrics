@@ -4,7 +4,7 @@ import json
 
 
 def get_parser():
-    with open('config.json') as f:
+    with open("/app/efficiency_metrics/app/config.json") as f:
         config = json.load(f)
     if config['nickname'] is None:
         return None
@@ -21,7 +21,7 @@ def get_parser():
 
 
 def get_cocomo():
-    with open('config.json') as f:
+    with open("/app/efficiency_metrics/app/config.json") as f:
         config = json.load(f)
         return config['cocomo']
 
