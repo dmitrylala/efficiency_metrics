@@ -3,7 +3,7 @@ from os import path
 
 from sklearn.linear_model import LinearRegression
 
-from sql_utils import get_df
+from pages.sql_utils import get_df
 
 
 def process_df(df, rm_cols=False):
