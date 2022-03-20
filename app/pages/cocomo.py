@@ -283,7 +283,7 @@ def app():
     metric_value = a * kloc ** b * laboriousness
     st.metric("Трудоемкость (в человеко-месяцах)", metric_value)
 
-    with open('config.json') as f:
+    with open("/app/efficiency_metrics/app/config.json") as f:
         config = json.load(f)
     config['cocomo'] = metric_value
     with open('config.json', 'w') as f:
