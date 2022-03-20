@@ -1,5 +1,5 @@
 import streamlit as st
-from jira_workflow import JiraWorkflow
+from pages.jira_workflow import JiraWorkflow
 import json
 
 
