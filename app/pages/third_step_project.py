@@ -97,7 +97,7 @@ def app():
         projects_database.iloc[project_n].loc["labor_costs"] = labor_costs
         projects_database.iloc[project_n].loc["team_rate"] = team_rate
         projects_database.iloc[project_n].loc["delay"] = delay
-        conn = sqlite3.connect(path.join("databases", "data.db"))
+        conn = sqlite3.connect("/app/efficiency_metrics/app/databases/data.db")
         cur = conn.cursor()
         cur.execute('UPDATE projects SET (%s) = (%s) WHERE id = (SELECT COUNT(*) FROM projects)' % (
         "labor_costs", ":labor_costs"),
