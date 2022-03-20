@@ -286,7 +286,7 @@ def app():
     with open("/app/efficiency_metrics/app/config.json") as f:
         config = json.load(f)
     config['cocomo'] = metric_value
-    with open('config.json', 'w') as f:
+    with open("/app/efficiency_metrics/app/config.json", 'w') as f:
         json.dump(config, f)
 
     st.markdown("## Предсказание искусственного интеллекта")
