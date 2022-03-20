@@ -7,7 +7,7 @@ import sqlite3
 from os import path
 
 def get_parser():
-    with open('config.json') as f:
+    with open("/app/efficiency_metrics/app/config.json") as f:
         config = json.load(f)
     if config['nickname'] is None:
         return None
