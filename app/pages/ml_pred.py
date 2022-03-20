@@ -17,7 +17,7 @@ def process_df(df, rm_cols=False):
 
 
 def predict(data):
-    conn = sqlite3.connect(path.join("databases", "data.db"))
+    conn = sqlite3.connect("/app/efficiency_metrics/app/databases/data.db")
     df_db = get_df(conn, "select * from projects")
     df_db = process_df(df_db, True)
     lr = LinearRegression()
