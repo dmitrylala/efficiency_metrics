@@ -4,7 +4,7 @@ import streamlit as st
 from pages.sql_utils import get_df
 
 # constants
-DB_PATH = "./databases/data.db"
+DB_PATH = "/app/efficiency_metrics/app/databases/data.db"
 
 
 def app():
