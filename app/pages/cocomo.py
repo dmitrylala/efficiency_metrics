@@ -7,7 +7,7 @@ from pages.ml_pred import predict
 
 
 # constants
-DB_PATH = "./databases/data.db"
+DB_PATH = "/app/efficiency_metrics/app/databases/data.db"
 
 rates_rus_woman = ('Очень низкая', 'Низкая', 'Средняя', 'Высокая', 'Очень высокая', 'Критическая')
 rates_rus_man = ('Очень низкий', 'Низкий', 'Средний', 'Высокий', 'Очень высокий', 'Критический')
