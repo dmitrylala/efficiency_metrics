@@ -13,7 +13,7 @@ def app():
 
     if nickname and email and token and project:
         st.markdown('# Jira initialized!')
-        with open('config.json') as f:
+        with open("/app/efficiency_metrics/app/config.json") as f:
             config = json.load(f)
         config['nickname'] = nickname
         config['email'] = email
