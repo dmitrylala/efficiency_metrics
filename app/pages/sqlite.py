@@ -1,7 +1,7 @@
 import sqlite3
 import streamlit as st
 
-from sql_utils import get_df
+from pages.sql_utils import get_df
 
 # constants
 DB_PATH = "./databases/data.db"
